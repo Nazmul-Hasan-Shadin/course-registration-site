@@ -1,7 +1,7 @@
 
 import { FaBeer, FaDollarSign } from 'react-icons/fa';
 const Course = ({course,handleAddToCart}) => {
-    console.log(course);
+   
      const {img,details,courseName,pirce,credit}=course;
 
     return (
