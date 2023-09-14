@@ -41,7 +41,7 @@ function App() {
     <main className='bg-[#F3F3F3]'>
      <div className="container mx-auto ">
 
-     <h2 className='text-center font-bold text-3xl'>Course Registration</h2>
+     <h2 className='text-center font-bold text-3xl py-4'>Course Registration</h2>
   <div className='  md:flex gap-5'>
   <Courses handleAddToCart={handleAddToCart}></Courses>
     <Cart cart={cart} credit={credit} creditRemaining={creditRemaining}></Cart>
