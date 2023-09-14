@@ -1,0 +1,74 @@
+[
+    {
+      "img": "https://i.ibb.co/TPSGpvh/Rectangle-2-2.png",
+      "id": 1,
+      "courseName": "Introduction to C Programming",
+      "credit": " 1hr",
+      "pirce": 15000,
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    {
+      "img": "https://i.ibb.co/1nJx5Wy/Rectangle-2-3.png",
+      "id":2,
+      "courseName": "Introduction to Algorithms",
+      "credit": " 2hr",
+      "pirce": 25000,
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    {
+      "img": "https://i.ibb.co/0jfZZG3/Rectangle-2-4.png",
+      "id":3,
+      "courseName": "Introduction to C++ for DSA",
+      "credit": " 10hr",
+      "pirce": 10000,
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    {
+      "img": "https://i.ibb.co/NZJg779/Rectangle-3.png",
+      "id":4,
+      "courseName": "Basic Data Structures",
+      "credit": " 5hr",
+      "pirce": 35000,
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    {
+      "img": "https://i.ibb.co/L1yptCz/Rectangle-2.png",
+      "id":5,
+      "courseName": "Introduction to OOP Python",
+      "credit": " 5hr",
+      "pirce": 19000,
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    {
+      "img": "https://i.ibb.co/ww1wgff/Rectangle-2-5.png",
+      "id":6,
+      "courseName": "Software Engineering",
+      "credit": " 2hr",
+      "pirce": 23000,
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    {
+      "img": "https://i.ibb.co/Np72MJx/Rectangle-3-1.png",
+      "id":7,
+      "courseName": "AWS, Cloud Computing",
+      "credit": " 5hr",
+      "pirce": 35000,
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    {
+      "img": "https://i.ibb.co/fMWCCZd/Rectangle-2-1.png",
+      "id":8,
+      "courseName": "Database (MySQL)",
+      "credit": " 5hr",
+      "pirce": 19000,
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    {
+      "img": "https://i.ibb.co/BN7mKHX/Rectangle-2-6.png",
+      "id":9,
+      "courseName": "Problem-Solving Part",
+      "credit": " 2hr",
+      "pirce": 23000,
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    }
+  ]
