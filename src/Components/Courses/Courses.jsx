@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 
-const Courses = () => {
+const Courses = ({handleAddToCart}) => {
     const [courses,setCourses]= useState([]);
-    const [cart,setCart]= useState([]);
+    
 
      
     useEffect(()=>{
@@ -21,7 +21,7 @@ const Courses = () => {
         <div className=' container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 '>
         {
                 courses.map((course)=> <Course
-                
+                handleAddToCart={handleAddToCart}
                 key={course.id} 
                 course={course}></Course>)
              }
