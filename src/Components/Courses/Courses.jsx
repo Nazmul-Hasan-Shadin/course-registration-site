@@ -16,7 +16,7 @@ const Courses = ({handleAddToCart}) => {
 
 
     return (
-        <div className='w-2/3'>
+        <div className='md:w-2/3'>
            
         <div className=' container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 '>
         {
