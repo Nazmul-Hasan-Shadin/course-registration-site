@@ -5,14 +5,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
- const [cart,setCart]= useState([]);
+ const [selectedCart,setSelectedCart]= useState([]);
  const [creditRemaining,setCreditRemaining]=useState(20);
  const [credit ,setCredit]= useState(0);
 
  
  const handleAddToCart=(course)=>{
-  const newCart = [...cart ,course];
-   const existCart= cart.find((item=> item.id ==course.id))
+  const newCart = [...selectedCart ,course];
+   const existCart= selectedCart.find((item=> item.id ==course.id))
     if (existCart) {
       return toast('Same Course cannot added again')
     }
@@ -33,7 +33,7 @@ function App() {
     setCreditRemaining(remainingCredit)
 
 
-   setCart(newCart)
+   setSelectedCart(newCart)
 
  } 
 
@@ -44,8 +44,8 @@ function App() {
 
      <h2 className='text-center font-bold text-3xl py-6'>Course Registration</h2>
   <div className='  flex flex-col-reverse md:flex-row gap-5'>
-  <Courses handleAddToCart={handleAddToCart} toast={toast} ></Courses>
-    <Cart cart={cart} credit={credit} creditRemaining={creditRemaining}></Cart>
+  <Courses handleAddToCart={handleAddToCart}  ></Courses>
+    <Cart selectedCart={selectedCart} credit={credit} creditRemaining={creditRemaining}></Cart>
   </div>
 
      </div>

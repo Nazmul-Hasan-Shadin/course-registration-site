@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cart = ({cart,credit,creditRemaining}) => {
+const Cart = ({selectedCart,credit,creditRemaining}) => {
   
  
     return (
@@ -13,7 +13,7 @@ const Cart = ({cart,credit,creditRemaining}) => {
 
           <div className='space-y-2 text-[#1C1B1B] font-normal'>
           {
-                cart.map((singleCart,indx)=> <p key={indx}>{`${indx +1} . ${singleCart.courseName}`} </p> )
+                selectedCart.map((singleCart,indx)=> <p key={indx}>{`${indx +1} . ${singleCart.courseName}`} </p> )
              }
           </div>
 
