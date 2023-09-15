@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Courses from './Components/Courses/Courses'
 import Cart from './Components/Cart/Cart'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
  const [cart,setCart]= useState([]);
@@ -13,19 +14,19 @@ function App() {
   const newCart = [...cart ,course];
    const existCart= cart.find((item=> item.id ==course.id))
     if (existCart) {
-      return alert('Same Course cannot added again')
+      return toast('Same Course cannot added again')
     }
     
     const creditToNum= parseFloat(course.credit);
     const totalCredit=  creditToNum + credit;
     if (totalCredit>20) {
-       return alert('Maximum Credit reached')
+       return toast('Maximum Credit reached')
     }
 
     setCredit(totalCredit);
     const remainingCredit= creditRemaining - creditToNum;
     if (remainingCredit<0) {
-         return alert('Your credit has finished')
+         return toast('Your credit has finished')
     }
     console.log(remainingCredit);
 
@@ -43,13 +44,13 @@ function App() {
 
      <h2 className='text-center font-bold text-3xl py-6'>Course Registration</h2>
   <div className='  flex flex-col-reverse md:flex-row gap-5'>
-  <Courses handleAddToCart={handleAddToCart}></Courses>
+  <Courses handleAddToCart={handleAddToCart} toast={toast} ></Courses>
     <Cart cart={cart} credit={credit} creditRemaining={creditRemaining}></Cart>
   </div>
 
      </div>
 
-
+     <ToastContainer></ToastContainer>
     </main>
   )
 }

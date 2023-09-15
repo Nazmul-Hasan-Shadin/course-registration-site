@@ -1,6 +1,7 @@
 
 import { FaBook, FaDollarSign } from 'react-icons/fa';
-const Course = ({course,handleAddToCart}) => {
+
+const Course = ({course,handleAddToCart,toast}) => {
    
      const {img,details,courseName,pirce,credit}=course;
 
@@ -19,6 +20,7 @@ const Course = ({course,handleAddToCart}) => {
     </div>
     <div className="card-actions w-[100%] ">
       <button onClick={()=>handleAddToCart(course)} className="btn bg-[#2F80ED]   w-full text-white">Select</button>
+   
     </div>
   </div>
 </div>

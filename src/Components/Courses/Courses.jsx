@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 
-const Courses = ({handleAddToCart}) => {
+const Courses = ({handleAddToCart,toast}) => {
     const [courses,setCourses]= useState([]);
     
 
